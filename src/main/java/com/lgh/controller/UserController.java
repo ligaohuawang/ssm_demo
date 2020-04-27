@@ -1,5 +1,6 @@
 package com.lgh.controller;
 
+import com.lgh.entity.User;
 import com.lgh.service.IUserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -16,6 +17,7 @@ public class UserController {
      */
     @RequestMapping("/testAdd")
     public void testAdd(){
-
+        User user =new User();
+iUserService.testAdd(user);
     }
 }
