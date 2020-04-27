@@ -11,6 +11,9 @@ public class UserController {
     @Autowired
     private IUserService iUserService;
 
+    /**
+     * 组员在同一给地方写了一个bug
+     */
     @RequestMapping("/testAdd")
     public void testAdd(){
 
