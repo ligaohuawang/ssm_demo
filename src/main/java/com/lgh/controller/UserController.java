@@ -13,11 +13,13 @@ public class UserController {
     private IUserService iUserService;
 
     /**
+     * 组员在同一给地方写了一个bug
+     */
+    /**
      * 组长写了一个bug
      */
     @RequestMapping("/testAdd")
     public void testAdd(){
-        User user =new User();
-iUserService.testAdd(user);
+
     }
 }
