@@ -20,7 +20,6 @@ public class UserController {
      */
     @RequestMapping("/testAdd")
     public void testAdd(){
-        User user =new User();
-iUserService.testAdd(user);
+
     }
 }
