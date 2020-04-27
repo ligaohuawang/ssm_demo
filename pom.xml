@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.lgh</groupId>
+  <artifactId>ssm_demo</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>war</packaging>
+
+  <name>ssm_demo Maven Webapp</name>
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <!--TODO A1 springmvc的依赖-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>4.3.20.RELEASE</version>
+    </dependency>
+    <!--TODO B1 spring-tx的依赖-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-tx</artifactId>
+      <version>4.3.20.RELEASE </version>
+    </dependency>
+    <!--TODO B2 spring-test的依赖-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>4.3.20.RELEASE </version>
+      <scope>test</scope>
+    </dependency>
+    <!--TODO B3 springAOP的依赖-->
+    <dependency>
+      <groupId>org.aspectj</groupId>
+      <artifactId>aspectjweaver</artifactId>
+      <version>1.8.12</version>
+    </dependency>
+    <!--TODO C1 jdbc的依赖-->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>4.3.20.RELEASE </version>
+    </dependency>
+    <!--TODO C2 阿里巴巴druid连接池的依赖-->
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid</artifactId>
+      <version>1.0.16</version>
+    </dependency>
+    <!--TODO C3 数据库驱动的依赖-->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <version>5.1.38</version>
+    </dependency>
+    <!--TODO C4 mybatis的依赖-->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>3.3.0</version>
+    </dependency>
+    <!--TODO C5 mybatis整合Spring的依赖-->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis-spring</artifactId>
+      <version>1.2.4</version>
+    </dependency>
+    <!--TODO C6 mybatis分页插件的依赖-->
+    <dependency>
+      <groupId>com.github.pagehelper</groupId>
+      <artifactId>pagehelper</artifactId>
+      <version>4.1.1</version>
+    </dependency>
+    <!--TODO QT1 单元测试 的依赖-->
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+
+    <!--TODO QT2 servlet 的依赖-->
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>3.1.0</version>
+    </dependency>
+    <!--TODO QT3 jstl 的依赖-->
+    <dependency>
+      <groupId>jstl</groupId>
+      <artifactId>jstl</artifactId>
+      <version>1.2</version>
+    </dependency>
+
+
+  </dependencies>
+
+  <build>
+    <finalName>ssm_demo</finalName>
+    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
+      <plugins>
+        <plugin>
+          <artifactId>maven-clean-plugin</artifactId>
+          <version>3.1.0</version>
+        </plugin>
+        <!-- see http://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_war_packaging -->
+        <plugin>
+          <artifactId>maven-resources-plugin</artifactId>
+          <version>3.0.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-compiler-plugin</artifactId>
+          <version>3.8.0</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-surefire-plugin</artifactId>
+          <version>2.22.1</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-war-plugin</artifactId>
+          <version>3.2.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-install-plugin</artifactId>
+          <version>2.5.2</version>
+        </plugin>
+        <plugin>
+          <artifactId>maven-deploy-plugin</artifactId>
+          <version>2.8.2</version>
+        </plugin>
+      </plugins>
+    </pluginManagement>
+  </build>
+</project>
