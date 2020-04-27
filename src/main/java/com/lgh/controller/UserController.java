@@ -14,6 +14,9 @@ public class UserController {
     /**
      * 组员在同一给地方写了一个bug
      */
+    /**
+     * 组长写了一个bug
+     */
     @RequestMapping("/testAdd")
     public void testAdd(){
 
